@@ -28,7 +28,9 @@ class Category extends StatelessWidget {
                 ),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                 Navigator.of(context).pushNamed(CategoryScreen.route);
+                },
                 child: Text(
                   "see all",
                   style: TextStyle(color: Colors.green),
